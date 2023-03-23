@@ -14,35 +14,46 @@ You are given bhp.csv which contains property prices in the city of banglore, In
 
     (ii) Using IQR, detect height outliers and print them
 
-##Aim:
+Aim:
+
 TO detect and remove the outliers in the given data set and save the final data.
 
-##Algorithm:
+Algorithm:
+
 Step 1
+
 Import the required packages(pandas,numpy,scipy)
 
 Step 2
+
 Read the given csv file
 
 Step 3
+
 Convert the file into a dataframe and get information of the data.
 
 Step 4
+
 Remove the non numerical data columns using drop() method.
 
 Step 5
+
 Detect the outliers in the data set using z scores method.
 
 Step 6
+
 Remove the outliers by z scores and list manupilation or by using Interquartile Range(IQR)
 
 Step 7
+
 Check if the outliersare removed from data set using graphical methods.
 
 Step 8
+
 Save the final data set into the file.
 
-##Program:
+Program:
+
 1) & (2) Examine price_per_sqft column and use IQR to remove outliers and create new dataframe.
 Program developed by : R.brindha Register number : 21222230023
 ~~~py
@@ -136,7 +147,7 @@ df5.shape
 sns.boxplot(x="height",data=df5)
 ~~~
 
-##Output:
+Output:
 
 (1)(2) Examine price_per_sqft column and use IQR to remove outliers and create new dataframe.
 
@@ -243,7 +254,8 @@ Height - Without Outliers using IQR method:
 
 ![a26](https://user-images.githubusercontent.com/121418437/227319881-42415eb6-8029-4ee7-bd80-27315bee1d9f.PNG)
 
-##Result:
+Result:
+
 Thus the outliers are detected and removed in the given file and the final data set is saved into the file.
 
 
